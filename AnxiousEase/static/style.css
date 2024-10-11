@@ -1,0 +1,135 @@
+/* Add your styles here */
+body {
+    font-family: 'Comfortaa', cursive;
+    /* Dark background color */
+    color: #000000; /* Light text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url("https://s6.imgcdn.dev/q0zKw.png"); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-color: #caf4e3;
+    overflow: visible !important;
+    height: 100vh; /* Make the body take up the full viewport height */
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+
+img {
+    width: 7rem;
+    float: right;
+}
+
+/* Style the form elements */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 5px 0;
+    box-sizing: border-box;
+    background-color: #cbeedd; /* Dark input background color */
+    color: #277585; /* Light text color */
+    border: 1px solid #444;
+    border-radius: 10px /* Dark border color */
+}
+
+.header {
+    color: #277585;
+    font-family: 'Climate Crisis', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #277585;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: 700;
+    color: #277585;
+}
+
+button:hover {
+    background-color: #3aa1b6;
+}
+
+.summary-box {
+    border: 1px solid #277585; /* Dark border color */
+    border-radius: 10px;
+    background-color: #cbeedd;
+    color: #000000;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the result box */
+.result-box {
+    /* Dark border color */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #cbeedd; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+/* Style the score box */
+.score-box {
+    border: 5px solid #277585;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #bce8d3;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    color: #277585;
+    padding: 20px;
+}
+
+
+#outof {
+    color: #8f8f8f;
+}
+
+.explanation-box {
+    border: 2px solid #277585; /* Dark border color */
+    border-radius: 10px;
+    background-color: #bce8d3;
+    color: #277585;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 10px;
+}
+
+
+/* Style the details box */
+.details-box {
+    margin-top: 10px;
+}
+
+/* Add more styles as needed */
+
+.warning-box {
+    border: 5px solid #ffe300;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #ffef00;
+}

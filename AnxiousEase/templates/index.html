@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add other head elements -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>AnxiousEase | </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+        <h1 class="header">AnxiousEase</h1>
+        <img src="{{ url_for('static', filename='logo.svg') }}" alt="AnxiousEase Logo" class="logo">
+
+    <form method="post">
+        <label for="user_input">What are you feeling anxious about?</label>
+        <textarea id="user_input" name="user_input" rows="4" cols="50" required></textarea>
+        <button type="submit" class="analyze-button">Analyze</button>
+    </form>
+
+    {% if result %}
+        {% if result["score"] == "N/A" %}
+            <div class="warning-box">
+                <p>{{ result.summary }}</p>
+            </div>
+        {% else %}
+            <div class="result-box">
+                <div class="score-box">
+                    <h2 id="poss">Possibility </h2>
+                    <h2 id="score">{{ result.score }}<span id="outof"> /5</span></h2>
+                </div>
+
+                <div class="summary-box">
+                    <p>{{ result.summary | safe }}</p>
+                </div>
+
+                {% for explanation in result.explanations %}
+                    <div class="explanation-box">
+                        <h2>{{ explanation.title }}</h2>
+                        <p>{{ explanation.content | safe }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+</body>
+</html>
