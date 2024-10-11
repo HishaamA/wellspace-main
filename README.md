@@ -1,5 +1,5 @@
 
-# Project Title
+# Wellspace AI Suite
 
 WellSpace AI is an AI-powered mental health and
 wellbeing platform designed for schools. It assists
