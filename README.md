@@ -1,8 +1,6 @@
 
 # Project Title
 
-A brief description of what this project does and who it's for
-
 WellSpace AI is an AI-powered mental health and
 wellbeing platform designed for schools. It assists
 students with thier well-being issues in a safe,
@@ -11,8 +9,6 @@ school management with insightful data.
 The platform is web-based, making it accessible
 from any browser.
 ## Demo
-
-Insert gif or link to demo
 
 wellspace.ampiere.co
 ## Authors
